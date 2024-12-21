@@ -14,9 +14,8 @@ function Header() {
   return (
     <header className={cl("wrapper")}>
       <div className={cl("inner")}>
-        <div className={cl("logo")}>
-          <img src={image.logo} alt="TikTok"></img>
-        </div>
+        <img src={image.logo} alt="TikTok"></img>
+
         <div className={cl("search")}>
           <input placeholder="Search account and video" spellCheck={false} />
           <button>
