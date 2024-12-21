@@ -1,0 +1,16 @@
+.wrapper {
+  width: 100%;
+  height: var(--default-heigh-header);
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.container {
+  width: var(--default-width-content);
+  display: flex;
+}
+
+.content {
+  flex: 1;
+}
