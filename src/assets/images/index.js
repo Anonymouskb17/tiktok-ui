@@ -1,5 +1,6 @@
 const imgaes = {
   logo: require("~/assets/images/logo.svg").default,
+  noimage: require("~/assets/images/no-image.png").default,
 };
 
 export default imgaes;
