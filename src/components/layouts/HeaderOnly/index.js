@@ -1,4 +1,4 @@
-import Header from "../component/Header/index";
+import Header from "../components/Header/index";
 
 function HeaderOnly({ children }) {
   return (

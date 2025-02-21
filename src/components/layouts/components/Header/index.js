@@ -17,12 +17,14 @@ import "tippy.js/dist/tippy.css";
 import imgaes from "~/assets/images";
 
 import classNames from "classnames/bind";
+import config from "~/config";
 
 import Button from "~/components/Button";
 import Menu from "~/components/Poper/Menu";
 import { InboxIcon, MessageIcon, UploadIcon } from "~/components/icons";
 import Images from "~/components/Images";
 import Search from "../Search";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -33,6 +35,47 @@ const MENU_ITEM = [
     children: {
       title: "Language",
       data: [
+        {
+          type: "language",
+          code: "en",
+          title: "english",
+        },
+        {
+          type: "language",
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          type: "language",
+          code: "en",
+          title: "english",
+        },
+        {
+          type: "language",
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          type: "language",
+          code: "en",
+          title: "english",
+        },
+        {
+          type: "language",
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+
+        {
+          type: "language",
+          code: "en",
+          title: "english",
+        },
+        {
+          type: "language",
+          code: "vi",
+          title: "Tiếng Việt",
+        },
         {
           type: "language",
           code: "en",
@@ -97,7 +140,9 @@ function Header() {
   return (
     <header className={cx("wrapper")}>
       <div className={cx("inner")}>
-        <img src={imgaes.logo} alt="Tiktok" />
+        <Link to={config.routes.home}>
+          <img src={imgaes.logo} alt="Tiktok" />
+        </Link>
 
         <Search />
         <div className={cx("action")}>
